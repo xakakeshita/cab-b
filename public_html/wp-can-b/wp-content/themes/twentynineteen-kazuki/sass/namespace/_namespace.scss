@@ -1,0 +1,44 @@
+@import "dropdown";
+@import "fullscrollAnimate";
+@import "accordion";
+@import "arrow";
+@import "slick";
+@import "textslide";
+@import "modal";
+@import "fadeInFix";
+@import "underLine";
+@import "tab";
+
+
+@import "arrange/cstomLyout";
+@import "single/sngLyout";
+@import "flex/flex";
+@import "works/works";
+@import "fullpagescroll/fullpagescroll";
+@import "panel/panel";
+
+//js用のscss
+@import "js/slick";
+@import "js/slick-theme";
+
+
+//block
+.namespace-block{
+  max-width: 1020px;
+  min-width: 787px;
+  margin: 0 auto;
+}
+
+.namespace-Main{
+  max-width: 1280px;
+  min-width: 1020px;
+  margin: 0 auto;
+  //background-color: #00a0d2;
+}
+
+.namespace-Main-cstomLyout{
+  position: relative;
+  //overflow: hidden;
+  word-break: break-all;
+
+}

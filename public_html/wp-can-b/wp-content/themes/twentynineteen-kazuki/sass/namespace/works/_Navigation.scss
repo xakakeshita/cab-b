@@ -1,0 +1,126 @@
+.works-Navigation{
+  margin: 0 0 0 15px;
+  padding: 55px 0 60px;
+  //@include media-query('sp'){
+  //  display: none;
+  //}
+}
+.works-Navigation_List{
+  //display: flex;
+  @include clearfix();
+  list-style-type: none;
+  a{
+    display: block;
+    float: left;
+    color: #fff;
+  }
+  a:hover{
+    text-decoration: none;
+
+  }
+
+}
+.works-Navigation_Item{
+  position: relative;
+  width:115px;
+  height: 55px;
+  margin: 0 25px 0 0;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+
+  &:hover{
+    opacity: 0.4;
+    text-decoration: none;
+
+  }
+
+  &:before{
+    position: absolute;
+    left: -15px;
+    top: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 56px 16px;
+  }
+  &:after {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 56px 16px 0 0;
+  }
+
+}
+.works-Navigation_Item-all{
+  background-color: #8e8080;
+  &:hover{
+    text-decoration: none;
+  }
+  &:before{
+    border-color: transparent transparent #8e8080 transparent;
+  }
+  &:after {
+    border-color: #8e8080 transparent transparent transparent;
+  }
+}
+.works-Navigation_Item-buisiness{
+  background-color: #e84c18;
+  &:before{
+    border-color: transparent transparent #e84c18 transparent;
+  }
+  &:after {
+    border-color: #e84c18 transparent transparent transparent;
+  }
+}
+.works-Navigation_Item-creative{
+  background-color: #7991c9;
+  &:before{
+    border-color: transparent transparent #7991c9 transparent;
+  }
+  &:after {
+    border-color: #7991c9 transparent transparent transparent;
+  }
+}
+.works-Navigation_Item-produce{
+  background-color: #e77c80;
+  &:before{
+    border-color: transparent transparent #e77c80 transparent;
+  }
+  &:after {
+    border-color: #e77c80 transparent transparent transparent;
+  }
+}
+.works-Navigation_Item-project{
+  background-color: #00a595;
+  &:before{
+    border-color: transparent transparent #00a595 transparent;
+  }
+  &:after {
+    border-color: #00a595 transparent transparent transparent;
+  }
+}
+.works-Navigation_Item-media{
+  background-color: #e7942d;
+  &:before{
+    border-color: transparent transparent #e7942d transparent;
+  }
+  &:after {
+    border-color: #e7942d transparent transparent transparent;
+  }
+}
+.works-Navigation_Item-client{
+  background-color: #479ebe;
+  margin: 0;
+  &:before{
+    border-color: transparent transparent #479ebe transparent;
+  }
+  &:after {
+    border-color: #479ebe transparent transparent transparent;
+  }
+}

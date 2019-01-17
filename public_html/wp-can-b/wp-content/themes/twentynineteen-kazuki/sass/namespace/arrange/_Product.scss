@@ -1,0 +1,16 @@
+.cstomLyout-Product{
+  position: relative;
+}
+.cstomLyout-Product_Title{
+  @include font-size(46 / 16);
+  position: absolute;
+  bottom: 150px;
+  width: 650px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  background: url("./images/arrow.png") no-repeat right center;
+  background-size: contain;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}

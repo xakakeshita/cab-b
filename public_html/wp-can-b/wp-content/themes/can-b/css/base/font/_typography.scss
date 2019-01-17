@@ -1,0 +1,32 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $color__text-screen;
+  @include font-main();
+  @include font-size(16/16);
+  line-height: $font__line-height-body;
+}
+
+a {
+  text-decoration: none;
+  color: $color__link;
+  &:hover {
+    color: $color__link-hover;
+  }
+  &:visited {
+    color: $color__link-visited;
+  }
+  &:hover {
+  }
+
+}
+
+.rollover {
+  &:hover {
+    opacity: 0.7;
+    @include trans(.4s);
+  }
+}

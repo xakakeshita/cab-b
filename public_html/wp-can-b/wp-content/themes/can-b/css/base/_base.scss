@@ -1,0 +1,9 @@
+@import "mixin/mixin";
+@import "variable/variables";
+@import "normalize";
+@import "font/font";
+@import "form/forms";
+
+* {
+  box-sizing: border-box;
+}

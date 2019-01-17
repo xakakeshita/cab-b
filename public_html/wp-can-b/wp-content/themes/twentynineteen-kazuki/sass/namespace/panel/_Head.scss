@@ -1,0 +1,29 @@
+.panel-Head{
+  //@include font-noto();
+  @include font-size(40 / 16);
+  position: relative;
+  background-color: #000;
+  text-align:center;
+  color: ivory;
+  &::before,
+  &::after {
+    position: absolute;
+    //z-index: -1;
+    content: '';
+    width: 30px;
+    height: 40px;
+  }
+}
+.panel-Head::before{
+  bottom: -40px;
+  left: 0;
+  background-image:url(../images/contact/form-title-shadow-l.png);
+  background-repeat: no-repeat;
+}
+.panel-Head::after{
+  bottom: -40px;
+  right: 0;
+  background-image:url(../images/contact/form-title-shadow-r.png);
+  background-repeat: no-repeat;
+
+}

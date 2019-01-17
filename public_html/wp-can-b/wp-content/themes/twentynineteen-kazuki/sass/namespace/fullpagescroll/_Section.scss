@@ -1,0 +1,23 @@
+//Section
+.concept-Section_Wrapper{
+  padding: 0 0 50px;
+}
+.concept-Section{
+  position: relative;
+  //padding: 50px 0 0;
+}
+.concept-Section_Header{
+  padding:20px 0;
+  //@include media-query(sp) {
+  //  margin: 0 5px;
+  //  padding: 10px 0;
+  //}
+}
+.concept-Section_HeaderTitle{
+  //@include font-poppins-bold();
+  @include font-size(27 /16);
+}
+
+.concept-Section_Inner{
+  padding: 50px 0 0;
+}

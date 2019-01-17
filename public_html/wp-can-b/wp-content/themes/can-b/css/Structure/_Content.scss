@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.st-Whole {
+  max-width: $size__site-main;
+  min-width: $size__site-content;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  @include media-query('sp') {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.st-Content {
+  max-width: $size__site-content;
+  min-width: $size__site-content-inner;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  @include media-query('sp') {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.st-Content_Inner {
+  max-width: $size__site-content-inner;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  @include media-query('sp') {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.st-Content_TwoColumn {
+  display: table;
+  table-layout: fixed;
+  width: $size__site-content-inner;
+  margin: 0 auto;
+  @include media-query('sp') {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.st-Content_ColumnLeft {
+  float: left;
+  width: $size__site-content-inner - $size__site-sidebar;
+  @include media-query('sp') {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.st-Content_AsideColumnRight {
+  max-width: $size__site-sidebar;
+  //min-width: 768px;
+  float: right;
+  margin: 0 auto;
+  padding: 0;
+  @include media-query('sp') {
+    width: 100%;
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.arrow-delta-title{
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  margin: 30px 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  @include font-size(16 / 16);
+  font-weight: bold;
+  line-height: 40px;
+  background-color: gray;
+  border-radius: 6px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    margin: auto;
+    border: solid transparent 8px;
+    border-top-color: gray;
+    pointer-events: none;
+  }
+}

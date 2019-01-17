@@ -1,0 +1,72 @@
+//横からのスライドを指定している
+//このファイルのcssをコメント化すれば、横からのスライドを消すことができる
+
+.concept-Animation-FromRight {
+  // animate setting
+  body:not(.fp-responsive) & {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+    opacity: 0;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+  }
+
+  body:not(.fp-responsive) .fp-section.active & {
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  body:not(.fp-responsive) .fp-section.fp-completely & {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.concept-Animation-FromLeft{
+  // animate setting
+  body:not(.fp-responsive) & {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+    opacity: 0;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+  }
+  body:not(.fp-responsive) .fp-section.active & {
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  body:not(.fp-responsive) .fp-section.fp-completely & {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.concept-Animation-Delay1{
+  body:not(.fp-responsive) & {
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+  }
+}
+.concept-Animation-Delay2{
+  body:not(.fp-responsive) & {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+  }
+}
+.concept-Animation-Delay2{
+  body:not(.fp-responsive) & {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+  }
+}

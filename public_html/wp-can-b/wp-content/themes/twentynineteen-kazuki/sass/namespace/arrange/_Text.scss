@@ -1,0 +1,13 @@
+.cstomLyout-Text{
+  @include font-size(26 / 16);
+  margin: 0;
+}
+
+.cstomLyout-Text_Stroken{
+  -webkit-text-stroke: 1px #000;
+  font-weight: bold;
+}
+
+.cstomLyout-Text-w{
+  color: #ffffff;
+}

@@ -1,0 +1,46 @@
+@import "Panel";
+@import "Section";
+@import "Content";
+@import "Text";
+@import "Animation";
+
+
+
+.concept-Base_Slide {
+  &.fp-section {
+    -webkit-perspective: 3200;
+    perspective: 3200;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    .fp-responsive & {
+      -webkit-perspective: none;
+      perspective: none;
+      -webkit-transform-style: flat;
+      transform-style: flat;
+    }
+
+  }
+}
+.concept-Base_SlideInner {
+  body.fp-responsive & {
+  }
+  .fp-section & {
+    -webkit-transition: all .8s ease-out;
+    transition: all .8s ease-out;
+    -webkit-transform: translateY(-50%) rotateX(-160deg) scale(0.3);
+    transform: translateY(-50%) rotateX(-160deg) scale(0.3);
+    opacity: 0;
+    body.fp-responsive & {
+      -webkit-transition: none;
+      transition: none;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  .fp-section.active & {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    opacity: 1;
+  }
+}

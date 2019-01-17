@@ -1,0 +1,116 @@
+//Text
+.concept-Text{
+  //@include font-noto-bold();
+  @include font-size(15 / 16);
+  display: block;
+  margin: 0 0 20px;
+}
+.concept-Text-slide2{
+  //@include font-noto-bold();
+  @include font-size(15 / 16);
+  position: relative;
+  margin: 0 auto 30px;
+  line-height: (28 / 15);
+}
+
+.concept-Text-last{
+  //@include font-noto-bold();
+  @include font-size(15 / 16);
+  margin: 0 0 40px;
+}
+.concept-Text-red{
+  color: red;
+}
+.concept-Text-mb15{
+  margin: 0 0 15px;
+}
+.concept-Text-mb30{
+  margin: 0 0 30px;
+}
+.concept-Text-mb35{
+  margin: 0 0 35px;
+}
+.concept-Text-mb40{
+  margin: 0 0 40px;
+}
+.concept-Text-lh28{
+  line-height: (28 / 15);
+}
+
+.concept-Text_Quot{
+  @include font-size(18 / 16);
+  margin: 0;
+  padding: 20px 40px 15px 45px;
+  //@include media-query('sp'){
+  //  margin: 20px;
+  //  border: 1px solid #000;
+  //  padding: 20px 20px 15px 25px;
+  //
+  //}
+}
+.concept-Text_Strong{
+  @include font-size(18 / 16);
+}
+
+.concept-Text_Strong-lg{
+  @include font-size(26 / 16);
+  line-height: (36 / 26);
+  //@include media-query('sp'){
+  //  @include font-size(24 / 16);
+  //}
+}
+.concept-Text_Signature{
+  //@include font-noto();
+  @include font-size(15 / 16);
+  position: relative;
+  display: inline-block;
+  margin: 80px 0 0;
+  padding: 0 0 0 50px;
+  &::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width:45px;
+    height:35px;
+    background-image: url(../images/concept/airplane.png);
+
+  }
+}
+
+.concept-Slide2_QuotBox{
+  @include font-size(18 / 16);
+  width: 645px;
+  height: 145px;
+  margin: 0 auto 35px;
+  background: url("../images/concept/quote.png") no-repeat center top;
+  background-size: contain;
+  line-height: ( (20 + 18) / 18);
+  //@include media-query('sp'){
+  //  position: relative;
+  //  width: 100%;
+  //  height:auto;
+  //  background-image: none;
+  //  &::before{
+  //    content: '';
+  //    width:16px;
+  //    height:16px;
+  //    position: absolute;
+  //    top:0;
+  //    left:15px;
+  //    background-image: url("../images/concept/quat-top.png");
+  //
+  //  }
+  //  &::after{
+  //    content: '';
+  //    width: 16px;
+  //    height: 16px;
+  //    position: absolute;
+  //    bottom:-5px;
+  //    right:12px;
+  //    background-image: url("../images/concept/quat-bottom.png");
+  //
+  //  }
+  //}
+
+}

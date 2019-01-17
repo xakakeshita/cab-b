@@ -1,0 +1,31 @@
+.js_tab{
+  display: flex;
+}
+.js_tab1{
+  display: inline-block;
+  margin-right: 30px;
+  border-bottom: 1px solid #000;
+}
+.js_tab2{
+  display: inline-block;
+  border-bottom: 1px solid #000;
+}
+
+.js_tab_content{
+  display: none;
+}
+.js_tab_current_content{
+  display: block;
+}
+
+.js_tab_content-1{
+  //height:500px;
+  background-color: #00a0d2;
+
+}
+.js_tab_content-2{
+  //height:500px;
+  background-color: red;
+
+}
+

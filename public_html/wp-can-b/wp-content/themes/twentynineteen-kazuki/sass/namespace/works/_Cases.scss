@@ -1,0 +1,164 @@
+.works-Cases_Container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  //@include media-query('sp'){
+  //  width: 100%;
+  //  padding: 0 35px;
+  //}
+
+}
+.works-Cases_Unit{
+  width: 300px;
+  margin: 0 0 50px;
+  //@include media-query('sp'){
+  //  margin: 0 0 40px;
+  //  width: 100%;
+  //}
+}
+.works-Cases_Item{
+  &:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+  }
+  a{
+    display: block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.works-Cases_ImgUnit{
+  position: relative;
+  width: 300px;
+  height: 205px;
+  box-shadow: 0 0 6px 3px #f3f3f3;
+  //@include media-query('sp'){
+  //  max-width: 100%;
+  //  margin: 0 auto;
+  //}
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.works-Cases_Title{
+  //@include font-noto();
+  @include font-size(13 / 16);
+  margin: 10px 0;
+  color: #000;
+  //@include media-query('sp'){
+  //  text-align: center;
+  //}
+}
+.works-Cases_CategoryName{
+  //@include font-poppins-semibold();
+  @include font-size(13 /16);
+  position: relative;
+  display: block;
+  width:125px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 3px 0;
+  text-align: center;
+  color: #fff;
+
+  &:before{
+    position: absolute;
+    left: -10px;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 25px 10px;
+    //@include media-query('sp'){
+    //  border-width: 0 0 25px 11px;
+    //}
+  }
+  &:after {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 10px 0 0;
+    //@include media-query('sp'){
+    //  border-width: 25px 11px 0 0;
+    //}
+  }
+
+}
+
+.works-Cases_CategoryName-all{
+  background-color: #8e8080;
+  &:before{
+    border-color: transparent transparent #8e8080 transparent;
+  }
+  &:after {
+    border-color: #8e8080 transparent transparent transparent;
+  }
+}
+.works-Cases_CategoryName-buisiness{
+  background-color: #e84c18;
+  &:before{
+    border-color: transparent transparent #e84c18 transparent;
+  }
+  &:after {
+    border-color: #e84c18 transparent transparent transparent;
+  }
+}
+.works-Cases_CategoryName-creative{
+  background-color: #7991c9;
+  &:before{
+    border-color: transparent transparent #7991c9 transparent;
+  }
+  &:after {
+    border-color: #7991c9 transparent transparent transparent;
+  }
+}
+.works-Cases_CategoryName-produce{
+  background-color: #e77c80;
+  &:before{
+    border-color: transparent transparent #e77c80 transparent;
+  }
+  &:after {
+    border-color: #e77c80 transparent transparent transparent;
+  }
+}
+.works-Cases_CategoryName-project{
+  background-color: #00a595;
+  &:before{
+    border-color: transparent transparent #00a595 transparent;
+  }
+  &:after {
+    border-color: #00a595 transparent transparent transparent;
+  }
+}
+.works-Cases_CategoryName-media{
+  background-color: #e7942d;
+  &:before{
+    border-color: transparent transparent #e7942d transparent;
+  }
+  &:after {
+    border-color: #e7942d transparent transparent transparent;
+  }
+}
+.works-Cases_CategoryName-client{
+  background-color: #479ebe;
+  margin: 0;
+  &:before{
+    border-color: transparent transparent #479ebe transparent;
+  }
+  &:after {
+    border-color: #479ebe transparent transparent transparent;
+  }
+}

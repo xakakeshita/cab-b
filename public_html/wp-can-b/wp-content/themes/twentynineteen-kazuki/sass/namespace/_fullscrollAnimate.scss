@@ -1,0 +1,16 @@
+.animate-on-70 {
+  position: relative;
+  opacity: 0;
+  top: 10px;
+  transition: all 1200ms 0s ease-in;
+  //@include media-query('sp'){
+  //  opacity: 1;
+  //}
+
+  &.animate-active {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+//function.phpでiqueryの読み込み

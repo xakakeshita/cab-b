@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+//Noto
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url('../font/noto/NotoSansCJKjp-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url('../font/noto/NotoSansCJKjp-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url('../font/noto/NotoSansCJKjp-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url('../font/noto/NotoSansCJKjp-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url('../font/noto/NotoSansCJKjp-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url('../font/noto/NotoSansCJKjp-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+//RobotoSlab
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('../font/RobotoSlab/RobotoSlab-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('../font/RobotoSlab/RobotoSlab-Regular.ttf') format('true type');
+  font-weight: 400;
+  font-style: normal;
+}

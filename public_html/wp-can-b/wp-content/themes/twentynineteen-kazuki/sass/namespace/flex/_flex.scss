@@ -1,0 +1,224 @@
+.ui-icon-circle{
+  display: block;
+  background-color: darkorange;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px 0 0;
+}
+
+.ui-icon-circle-test{
+  display: block;
+  background-color: darkblue;
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px 0 0;
+}
+
+.flex-container{
+  display: flex;
+  border: 1px solid #000;
+  width:980px;
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+.flex-child{
+  border: 1px solid #000;
+  display: flex;
+}
+
+.flex-child-inner1{
+
+}
+.flex-child-inner2{
+  height:60px;
+
+}
+.flex-child-inner3{
+  height:80px;
+
+}
+.flex-child-inner4{
+
+}
+.flex-child-inner5{
+  height:10px;
+}
+
+.flex-child-height30px{
+  height: 30px;
+}
+
+/*
+  //flex-itemの位置を水平調整（item同士の単位で調整
+  //
+  //(contentの位置を垂直調整（行単位）に対して行いたいときは align-content のプロパティを使用)
+  //
+*/
+.flex-alignitems_stretch{
+  align-items: stretch;
+}
+  .flex-aligncontent_stretch{
+    align-content: stretch;
+
+  }
+.flex-alignitems_start{
+  align-items: flex-start;
+}
+  .flex-aligncontent_start{
+    align-content: flex-start;
+  }
+.flex-alignitems_end{
+  align-items: flex-end;
+
+}
+  .flex-aligncontent_end{
+    align-content: flex-end;
+
+  }
+
+.flex-alignitems_center{
+  align-items: center;
+}
+  .flex-aligncontent_center{
+    align-content: center;
+
+  }
+
+
+.flex-justifycontent_between{
+  justify-content: space-between;
+}
+.flex-justifycontent_around{
+  justify-content: space-around;
+
+}
+
+.flex-justifycontent_start{
+  justify-content: flex-start;
+
+}
+.flex-justifycontent_end{
+  justify-content: flex-end;
+
+}
+.flex-justifycontent_center{
+  justify-content: center;
+
+}
+
+.flex-direction_column{
+  flex-direction: column;
+  height:auto;
+}
+
+.flexItem-order{
+
+  &1{
+    order:1;
+  }
+  &2{
+    order:2;
+  }
+  &3{
+    order:3;
+  }
+  &4{
+    order:4;
+  }
+  &5{
+    order:5;
+  }
+
+}
+
+.flecItem-grow{
+  flex-grow: 1;
+
+  &2x{
+    flex-grow: 3;
+  }
+}
+
+.flexItem-basis{
+  flex-basis: auto;
+  &250{
+    flex-basis: 250px;
+  }
+}
+
+.flexItem-alignself{
+  align-self: auto;
+  &_start{
+    align-self: flex-start;
+  }
+  &_stretch{
+    align-self: stretch;
+  }
+  &_end{
+    align-self: flex-end;
+  }
+}
+
+/*
+flex-itemに使用するflexプロパティについて
+(制御が難しいので使いこな成すことは難しい)
+*/
+
+/*
+//値1つの構文: 値は以下のうちの1つです。
+//単位なしの <number>: <flex-grow> として解釈されます。
+//width として有効な値: <flex-basis> として解釈されます。
+//none, auto, initial のキーワード値のいずれか。
+
+//値2つの構文: 最初の値は単位なしの <number> でなければならず、 <flex-grow> として解釈されます。2つ目の値は以下のうちの1つです。
+//単位なしの <number>: <flex-shrink> として解釈されます。
+//width として有効な値: <flex-basis> として解釈されます。
+
+//値3つの構文:
+//最初の値は単位なしの <number> でなければならず、 <flex-grow> として解釈されます。
+//2つ目の値は単位なしの <number> でなければならず、 <flex-shrink> として解釈されます。
+//3つ目の値は width として有効な値でなければならず、 <flex-basis> として解釈されます。
+*/
+
+.flex-container-test{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  width:980px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.flexItem-flex{
+  flex: 0 auto;
+  &2x{
+    flex: 0 250px;
+  }
+  &-test{
+    flex: 300px;
+    height: 330px;
+
+    img{
+      width: 100%;
+      height: 250px;
+    }
+  }
+  &-custom{
+    flex: 450px;
+    height: 350px;
+
+    img{
+      width: 100%;
+      height: 270px;
+
+    }
+  }
+}

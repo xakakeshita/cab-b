@@ -1,0 +1,162 @@
+/* 「FromRight」の動作内容 */
+@keyframes FromRight {
+  0% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+    opacity: 0;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+  }
+  100% {
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FromRight{
+  0% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+    opacity: 0;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+  }
+  100% {
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+/* 「FromLeft」の動作内容 */
+@keyframes FromLeft {
+  0% {
+
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+
+    opacity: 0;
+
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+
+  }
+  100% {
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    opacity: 1;
+
+  }
+
+}
+
+@-webkit-keyframes FromLeft {
+  0% {
+
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+
+    opacity: 0;
+
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+
+  }
+  100% {
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+    opacity: 1;
+
+  }
+}
+
+/* 「FromRight」を適用する箇所 */
+.text-slide_FromRight {
+  animation-delay: .5s;
+  -webkit-animation: .5s;
+
+  animation-duration: .8s; /* アニメーション時間 */
+  -webkit-animation-duration: .8s;
+
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: FromRight; /* アニメーション名 */
+  animation-iteration-count: 1; /* アニメーションの繰り返し*/
+
+  //@include media-query('sp'){
+  //  animation: none;
+  //}
+}
+
+/* 「FromLeft」を適用する箇所 */
+.text-slide_FromLeft {
+  animation-delay: .5s;
+  -webkit-animation: .5s;
+
+  animation-duration: .5s; /* アニメーション時間 */
+  -webkit-animation-duration: .8s;
+
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-name: FromLeft; /* アニメーション名 */
+  animation-iteration-count: 1; /* アニメーションの繰り返し*/
+  //@include media-query('sp'){
+  //  animation: none;
+  //  -webkit-animation: none;
+  //}
+
+}
+
+.transition-delay-1 {
+  opacity: 0;
+  //@include media-query('sp'){
+  //  opacity: 1;
+  //}
+}
